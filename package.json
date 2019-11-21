@@ -1,10 +1,14 @@
 {
   "name": "nano-address",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Lightweight JS library for Nano (http://nano.org) address manipulation",
-  "main": "index.js nacl.js",
+  "main": "nano-address.js",
+  "files": [
+    "nano-address.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify nacl.js address.js > nano-address.js",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,9 @@
-var blake = require("blakejs")
 
-window.nacl = {};
+nacl = {};
 (function(nacl) {
   'use strict';
+
+  var blake = require("blakejs")
 
 // Ported in 2014 by Dmitry Chestnykh and Devi Mandiri.
 // Public domain.
@@ -1202,5 +1203,6 @@ window.nacl = {};
     }
   })();
 
-// })(typeof module !== 'undefined' && module.exports ? module.exports : (self.nacl = self.nacl || {}));
-})(window.nacl);
+})(typeof module !== 'undefined' && module.exports ? module.exports : (self.nacl = self.nacl || {}));
+//})(window.nacl);
+//})(nacl);
